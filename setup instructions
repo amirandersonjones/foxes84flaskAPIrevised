@@ -1,0 +1,46 @@
+<!-- Flask app is a pattern that you should not deviate from
+Getting a flask project set up for development: -->
+
+<!-- 1.) set up file structure:
+        1.)app-folder
+            1.)__init__.py
+            2.)routes.py
+            3.)templates-folder
+                -index.html-file
+        2.)config.py-file
+        3.).env-file -->
+<!-- 
+<!-- 2.) set up virtual environment-install programs and packages in limited spaces on the pc. Does not install in any other folder or globally on the pc. Some programs may conflict with Flask so needs to be in project folder only!
+        1.) in command terminal type: python -m venv venv - run once everytime you create a new flask project-venv folder should have been created.
+        2.) in command terminal type: venv\scripts\activate - run everytime you open the project-(venv)
+            windows: venv\scripts\activate
+            mac: source .venv/bin/activate 
+        3.) select interpreter ->settings-> command palette-> python:search select interpret -> venv venv--> 
+        
+<!-- 3.) install packages:
+        1.)pip install flask: may get a warning message to update
+            a.)pip uninstall flask click colorama jinja2 markupsafe werkzeug itsdangerous
+            b.)python.exe -m pip install --upgrade pip
+            c.)pip install flask
+        2.)pip freeze > requirements.txt  - you must run this everytime you make changes or new installations.
+        3.)pip install python-dotenv -keeps secret variables and sensitive config variables for .env file
+        4.)pip freeze > requirements.txt
+         -->
+
+<!-- 4.) set up .gitignore- includes folder or filenames that we want git not to track/not put them publicly on github 
+        1.)create .gitignore file outside of the app folder. 
+        2.)inside the folder type: venv ->(new line) -> .env ->(new line) __pycache__
+        3.)follow normal steps to initialize and save repository
+        -->
+        
+
+
+
+4.) setting up flask configuration
+5.) initializing our app
+6.) hello, world!
+7.) github-setting up a repo for flask
+-why you should bother with branches
+8.)
+9.)
+10.)
