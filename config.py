@@ -15,5 +15,5 @@ class Config:
     set configuration variables for our entire flask app
     """
     FLASK_APP = os.environ.get('FLASK_APP')  # go get the FLASK_APP value from .env
-    FLASK_ENV = os.environ.get('FLASK.ENV')
+    FLASK_DEBUG = os.environ.get('FLASK.ENV')
     SECRET_KEY = os.environ.get('SECRET_KEY')
