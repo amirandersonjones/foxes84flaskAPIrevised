@@ -38,7 +38,7 @@
 #         1.)go to __init__.py
 #         2.)from the flask package that we installed import the Flask object/class -> type: from flask import Flask.
 #         3.)define/instantiate our Flask object...aka tell the computer that this is a flask app
-#         type: app = Flask(__name__) -> __name__ is telling flask that we named the flask app, app -->
+#         type: app = Flask(__name__ static_url_path='/static', static_folder='images') -> __name__ is telling flask that we named the flask app, app -->
 
 # <!-- 6.) setting up flask configuration:
 #         1.)go to the config.py file.
@@ -70,6 +70,10 @@
 
 #     8.) github-setting up a repo for flask
 #     -why you should bother with branches
+            #  <!-- 1.)after completing the initial commit the regular way
+            # type: git checkout -b {name of the branch you want} example/git checkout -b basic setup
+            # 2.)type: git push origin basicsetup 
+            # 3.)type:git checkout master -->
 
 
 # MVC-Models(objects/data DB models), Controller(Routes, what urls, buttons, actions, data), Views(HTML files, what the user actually sees,url that pings other routes.)
@@ -92,3 +96,30 @@
 #             return render_template('index.html')
 #         3.)Let flask app know about the existence of our routes ->__init__.py:
 #             type: from . import routes
+
+# -------------JINJA COMMENTS, STATEMENTS, EXPRESSIONS-------------
+# <!-- {# An exploration of Jinja Templating #}{# This is a Jinja Comment #} -->
+# <!-- 
+# {% if True %}
+  # {# curly bracket percent sign is a Jinja statement aka similar to a python process(conditional or loop) #}
+  # {# how are code blocks controllerd? #}
+  # {# in pytohon, code blocks are controlled by indentation #}
+  # {# does identation matter in html? No. #}
+    # {# how are code block controlled in jinja? They must be manually ended #}
+# {% endif %} -->
+
+# <!-- {% for x in range(5) %}
+  # {# our jinja for loop here will make it's contents multiple times on the html page #}
+#   <h1>Whoa</h1>
+# {% endfor %} -->
+
+<!-- ----------Photos-------------
+local images/css must be placed in a static folder inside the app folder in order to take advantage of flask's default static file system and use traditional relative links -->
+
+<!-- 
+Your app secret is b3ef1922ccfbe0b908c176fbf8d2a1bf1b1a11ee3a5456cc51c93611992bf8ff - copy now as it cannot be retrieved later. -->
+
+<!-- piratesofthecaribbean
+Client ID: MjgzMjIxNTF8MTY1OTg4NzI0Ny41NDUxNzgy
+
+Secret: b3ef....... -->

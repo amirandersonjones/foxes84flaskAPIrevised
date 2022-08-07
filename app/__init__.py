@@ -8,7 +8,7 @@ from flask import Flask
 from config import Config
 
 # define/instantiate our Flask object...aka tell the computer that this is a flask app
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 
 # tell this app how it should be configured. Does it have a database, is it a development or production flask app, does it have passwords or secret keys???- over to the config.py file to set up for this
 
